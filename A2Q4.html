@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A2Q4</title>
+    <style>
+        #text {
+            color: black;
+            text-align: center;
+        }
+
+        #image {
+            justify-content: center;
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="text">
+        <h1>Hover cursor on the image</h1>
+    </div>
+    <div id="image">
+        <img src="A2Q4-img.png" alt="special image" height="200px" width="200px">
+    </div>
+
+    <script>
+
+        const text = document.getElementById("text");
+        const image = document.getElementById("image");
+
+        image.addEventListener("mouseover", function () {
+            text.style.color = "red"; // Change text color when mouse is over the image
+        });
+
+        image.addEventListener("mouseout", function () {
+            text.style.color = "black"; // Change text color back to default when mouse moves out of the image
+        });
+    </script>
+</body>
+
+</html>
