@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A2Q10</title>
+    <style>
+        body {
+            background-color: gainsboro;
+            width: 40%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        img {
+            display: block;
+            margin: auto;
+            width: 100px;
+            height: 100px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            margin: 20px;
+        }
+
+        input,
+        select {
+            border: 3px solid blue;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        #gender1,#gender2{
+            margin-left: 1px;
+        }
+
+        #select {
+            display: none;
+        }
+
+        #signup {
+            border: none;
+            background-color: orange;
+            width: 90%;
+            display: block;
+            margin: auto;
+        }
+
+        footer {
+            height: 100px;
+            display: block;
+            font-size: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="https://upload.wikimedia.org/wikipedia/en/c/c5/Siksha_%E2%80%98O%E2%80%99_Anusandhan.png"
+        alt="Unable to load image.">
+    <h2>Registration</h2>
+    <label for="name">UserName:</label>
+    <input type="text" id="name" placeholder="Enter name..."> <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="Enter email..."> <br>
+    <label for="mobile">Contact no:</label>
+    <input type="number" id="mobile" placeholder="Enter MobileNo..."> <br>
+    <label for="gender">Gender:</label>
+    <input type="radio" name="gender">
+    <label for="gender1" id="gender1">Male</label>
+    <input type="radio" name="gender">
+    <label for="gender2" id="gender2">Female</label> <br>
+    <label for="city">City:</label>
+    <select id="city">
+        <option id="select">Select city</option>
+        <option value="city1">Bhubaneswar</option>
+        <option value="city2">Jamshedpur</option>
+        <option value="city3">Patna</option>
+        <option value="city4">Raipur</option>
+        <option value="city5">Bhopal</option>
+    </select><br>
+    <label for="security">Password:</label>
+    <input type="password" id="security" placeholder="Enter a strong password..."> <br>
+    <input type="submit" value="Sign Up" id="signup">
+
+    <footer>.</footer>
+</body>
+
+</html>
